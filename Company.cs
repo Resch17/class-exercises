@@ -20,7 +20,7 @@ namespace classes
         {
             foreach (Employee emp in CurrentEmployees)
             {
-                Console.WriteLine($"{emp.FirstName} {emp.LastName} works for {Name} as {emp.Title} since {emp.StartDate}");
+                Console.WriteLine($"{emp.FirstName} {emp.LastName} has worked for {Name} as {emp.Title} since {emp.StartDate.ToString("d")}.");
             }
         }
     }
