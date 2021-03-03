@@ -21,10 +21,7 @@ namespace classes
                 Iterate the company's employee list and generate the
                 simple report shown above
             */
-            foreach (Employee emp in centralPerk.CurrentEmployees)
-            {
-                Console.WriteLine($"{emp.FirstName} {emp.LastName} works for {centralPerk.Name} as {emp.Title} since {emp.StartDate}");
-            }
+            centralPerk.ListEmployees();
         }
     }
 }

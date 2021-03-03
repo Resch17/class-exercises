@@ -15,5 +15,13 @@ namespace classes
             CreatedOn = createDate;
             CurrentEmployees = employees;
         }
+
+        public void ListEmployees()
+        {
+            foreach (Employee emp in CurrentEmployees)
+            {
+                Console.WriteLine($"{emp.FirstName} {emp.LastName} works for {Name} as {emp.Title} since {emp.StartDate}");
+            }
+        }
     }
 }
